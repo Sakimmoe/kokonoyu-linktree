@@ -14,8 +14,8 @@
 
   --font-display: var(--font-display-jp), "Noto Serif SC",
     "Source Han Serif SC", "Songti SC", serif;
-  --font-body: var(--font-body-jp), "M PLUS Rounded 1c", "Hiragino Sans",
-    "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-body: var(--font-body-jp), "Hiragino Sans", "PingFang SC",
+    "Microsoft YaHei", sans-serif;
 
   --animate-fade-up: fade-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
 }

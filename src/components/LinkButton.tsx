@@ -2,7 +2,7 @@ import type { Lang, LinkItem } from "@/src/data/links";
 import { Icon } from "@/src/components/icons";
 
 const baseClass =
-  "group flex h-[60px] w-full items-center gap-4 rounded-[30px] border border-white/70 bg-white/60 px-4 shadow-[0_12px_30px_-12px_rgba(131,88,186,0.35)] backdrop-blur-xl transition-all duration-300";
+  "group flex h-[60px] w-full items-center gap-4 rounded-[10px] border-[1.5px] border-deep/20 bg-white/70 px-4 shadow-[0_8px_22px_-12px_rgba(131,88,186,0.4)] backdrop-blur-lg transition-all duration-200";
 
 export function LinkButton({
   item,
@@ -22,15 +22,15 @@ export function LinkButton({
         href={item.href}
         target={isMail ? undefined : "_blank"}
         rel={isMail ? undefined : "noreferrer"}
-        className={`${baseClass} hover:-translate-y-[2px] hover:border-white/80 hover:bg-linear-to-r hover:from-primary hover:to-lavender hover:shadow-[0_18px_36px_-14px_rgba(131,88,186,0.55)] focus-visible:-translate-y-[2px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep`}
+        className={`${baseClass} hover:-translate-y-[1px] hover:border-deep/40 hover:bg-primary hover:shadow-[0_14px_30px_-14px_rgba(131,88,186,0.65)] focus-visible:-translate-y-[1px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep`}
       >
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-mist/90 text-deep transition-colors duration-300 group-hover:bg-white/25 group-hover:text-white">
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-[8px] bg-mist/90 text-deep transition-colors duration-200 group-hover:bg-white/20 group-hover:text-white">
           <Icon name={item.icon} />
         </span>
-        <span className="flex-1 text-left text-[15px] font-semibold tracking-wide text-ink transition-colors duration-300 group-hover:text-white">
+        <span className="flex-1 text-left text-[15px] font-semibold tracking-wide text-ink transition-colors duration-200 group-hover:text-white">
           {item.label[lang]}
         </span>
-        <span className="translate-x-1 text-deep opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 group-hover:text-white">
+        <span className="translate-x-1 text-deep opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100 group-hover:text-white">
           <svg
             viewBox="0 0 24 24"
             className="h-4 w-4"

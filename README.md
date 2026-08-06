@@ -47,7 +47,7 @@ npm run start
 
 ### 左上角菜单
 
-菜单（委托 / Commission / Contact / Design）的链接在 [`src/data/links.ts`](src/data/links.ts) 的 `menu` 中修改。
+菜单（委托 / Commission / Contact / Design）为本站内部页面，内容与排版在 [`src/data/pages.ts`](src/data/pages.ts) 中维护；菜单链接在 [`src/data/links.ts`](src/data/links.ts) 的 `menu` 中修改。
 
 ### 背景图与图标
 

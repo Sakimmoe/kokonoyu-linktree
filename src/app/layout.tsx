@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Shippori_Mincho, Zen_Maru_Gothic } from "next/font/google";
+import { Shippori_Mincho, Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 
 const display = Shippori_Mincho({
@@ -9,7 +9,7 @@ const display = Shippori_Mincho({
   display: "swap",
 });
 
-const body = Zen_Maru_Gothic({
+const body = Zen_Kaku_Gothic_New({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-body-jp",

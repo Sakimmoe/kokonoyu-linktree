@@ -31,22 +31,22 @@ export const menu = {
   items: [
     {
       id: "commission-zh",
-      href: "https://kokonoeyukari.my.canva.site/hp-cn/page-4",
+      href: "/commission",
       label: { ja: "依頼", zh: "委托" },
     },
     {
       id: "commission",
-      href: "https://kokonoeyukari.my.canva.site/hp-cn/commission",
+      href: "/works",
       label: { ja: "Commission", zh: "Commission" },
     },
     {
       id: "contact",
-      href: "https://kokonoeyukari.my.canva.site/hp-cn/contact",
+      href: "/contact",
       label: { ja: "Contact", zh: "Contact" },
     },
     {
       id: "design",
-      href: "https://kokonoeyukari.my.canva.site/hp-cn/design",
+      href: "/design",
       label: { ja: "Design", zh: "Design" },
     },
   ],
