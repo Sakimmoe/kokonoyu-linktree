@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
+import { Shippori_Mincho, Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
 
-const serif = Noto_Serif_JP({
+const display = Shippori_Mincho({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-serif-jp",
+  weight: ["500", "600", "700"],
+  variable: "--font-display-jp",
   display: "swap",
 });
 
-const sans = Noto_Sans_JP({
+const body = Zen_Maru_Gothic({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-sans-jp",
+  weight: ["400", "500", "700"],
+  variable: "--font-body-jp",
   display: "swap",
 });
 
@@ -51,10 +51,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
-      <body className={`${serif.variable} ${sans.variable}`}>
-        {children}
-      </body>
+    <html lang="ja" className={`${display.variable} ${body.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

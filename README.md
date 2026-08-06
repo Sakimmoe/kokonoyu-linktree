@@ -45,11 +45,16 @@ npm run start
 
 默认语言在 [`src/components/Home.tsx`](src/components/Home.tsx) 顶部的 `DEFAULT_LANG` 修改（`"zh"` 或 `"ja"`）。用户的选择会保存在浏览器 localStorage 中。
 
+### 左上角菜单
+
+菜单（委托 / Commission / Contact / Design）的链接在 [`src/data/links.ts`](src/data/links.ts) 的 `menu` 中修改。
+
 ### 背景图与图标
 
 - 背景图：替换 `public/bg-character.png`。
 - 浏览器图标：替换 `src/app/favicon.ico`。
 - 头像：替换 `public/avatar.png`（建议正方形、人物居中）。
+- 按钮图标：bilibili / YouTube / X / 爱发电 使用官方 SVG；FANBOX / Fantia / BOOTH 使用官网原版图标（`public/icons/`）。
 
 ## 素材来源
 

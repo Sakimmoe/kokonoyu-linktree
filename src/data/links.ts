@@ -22,9 +22,34 @@ export const profile = {
   romaji: "Kokonoyu",
   kana: "ここのゆ",
   bio: {
-    ja: "平和族のアニメガール巫女、九重紫です。\n叶えられなかった夢や、忘れられた夢を、夢の持ち主の代わりに追体験して供養しています。\n私の夢は、大きくなって光り輝くこと。",
-    zh: "我是自称和平族的动漫小巫女，九重紫。\n我会代替梦的主人，去体验那些未能实现、或已被遗忘的梦，以此供养它们。\n我的梦想，是成为照亮大家的光。",
+    ja: "叶えられなかった夢を追体験することで供養し、寿命をつないでいる亜人です。\n数年前までは人間でしたが、今は亜人として生きています。\n自称・最も平和を願う平和族。みんなが仲良く、一人ひとりが幸せに同じ世界で暮らせることを夢見て、そのために活動しています。",
+    zh: "通过体验实现某人生前无法达成的梦想来超度他们，以延续自己寿命的亚人。\n在几年前还是人类，但现在以亚人的姿态存在。\n自称最清楚的平和族，梦想大家能和平相处，每一个人都幸福地在同一个世界生活。为了这个目标而努力进行活动。",
   },
+};
+
+export const menu = {
+  items: [
+    {
+      id: "commission-zh",
+      href: "https://kokonoeyukari.my.canva.site/hp-cn/page-4",
+      label: { ja: "依頼", zh: "委托" },
+    },
+    {
+      id: "commission",
+      href: "https://kokonoeyukari.my.canva.site/hp-cn/commission",
+      label: { ja: "Commission", zh: "Commission" },
+    },
+    {
+      id: "contact",
+      href: "https://kokonoeyukari.my.canva.site/hp-cn/contact",
+      label: { ja: "Contact", zh: "Contact" },
+    },
+    {
+      id: "design",
+      href: "https://kokonoeyukari.my.canva.site/hp-cn/design",
+      label: { ja: "Design", zh: "Design" },
+    },
+  ],
 };
 
 export const links: LinkItem[] = [
