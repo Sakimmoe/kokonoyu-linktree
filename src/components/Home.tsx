@@ -24,16 +24,15 @@ export function Home() {
     window.localStorage.setItem("kokonoyu-lang", next);
   };
 
+  const bioLines = profile.bio[lang].split("\n").filter(Boolean);
+
   return (
-    <main className="relative z-10 mx-auto flex min-h-dvh w-full max-w-[430px] flex-col px-7 pb-16 pt-5">
+    <main className="relative z-10 mx-auto flex min-h-dvh w-full max-w-[560px] flex-col px-6 pb-16 pt-6">
       <div className="relative z-30 flex items-center justify-between">
         <MenuButton lang={lang} />
-        <LangSwitch lang={lang} onChange={switchLang} />
-      </div>
 
-      <header className="animate-fade-up mt-6 text-center">
-        <div className="mx-auto h-[148px] w-[148px] rounded-[22px] border-2 border-deep/25 bg-white/60 p-1.5 shadow-[0_18px_44px_-18px_rgba(131,88,186,0.5)] backdrop-blur-md">
-          <div className="relative h-full w-full overflow-hidden rounded-[15px]">
+        <div className="h-[132px] w-[132px] rounded-[20px] border-2 border-deep/25 bg-white/60 p-1.5 shadow-[0_18px_44px_-18px_rgba(131,88,186,0.5)] backdrop-blur-md">
+          <div className="relative h-full w-full overflow-hidden rounded-[13px]">
             <Image
               src="/avatar.png"
               alt="九重紫"
@@ -45,7 +44,11 @@ export function Home() {
           </div>
         </div>
 
-        <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.42em] text-deep/70">
+        <LangSwitch lang={lang} onChange={switchLang} />
+      </div>
+
+      <header className="animate-fade-up mt-6 text-center">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.42em] text-deep/70">
           {profile.romaji}
         </p>
         <h1 className="mt-1 font-display text-[34px] font-semibold leading-tight text-deep">
@@ -57,9 +60,19 @@ export function Home() {
 
         <div className="mx-auto mt-5 h-px w-14 bg-deep/20" />
 
-        <p className="mx-auto mt-5 max-w-[350px] whitespace-pre-line px-2 text-[13px] leading-7 text-sub [text-shadow:0_1px_2px_rgba(255,255,255,0.85),0_0_14px_rgba(255,255,255,0.7)]">
-          {profile.bio[lang]}
-        </p>
+        <div className="mx-auto mt-5 max-w-[500px] rounded-[10px] border border-deep/15 bg-white/65 p-5 text-left shadow-[0_10px_28px_-18px_rgba(131,88,186,0.45)] backdrop-blur-md">
+          <p className="font-display text-[13px] font-semibold tracking-wide text-deep">
+            {lang === "zh" ? "自我介绍" : "自己紹介"}
+          </p>
+          <div className="mt-3 space-y-3">
+            {bioLines.map((line, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <span className="mt-[8px] h-[6px] w-[6px] shrink-0 rounded-[2px] bg-deep/50" />
+                <p className="text-[13.5px] leading-6 text-sub">{line}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </header>
 
       <nav aria-label="リンク" className="mt-7">

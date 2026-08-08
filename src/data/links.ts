@@ -32,22 +32,22 @@ export const menu = {
     {
       id: "commission-zh",
       href: "/commission",
-      label: { ja: "依頼", zh: "委托" },
+      label: { ja: "ご依頼について", zh: "委托" },
     },
     {
       id: "commission",
       href: "/works",
-      label: { ja: "Commission", zh: "Commission" },
+      label: { ja: "実績", zh: "工作展示" },
     },
     {
       id: "contact",
       href: "/contact",
-      label: { ja: "Contact", zh: "Contact" },
+      label: { ja: "お問合せ", zh: "联系" },
     },
     {
       id: "design",
       href: "/design",
-      label: { ja: "Design", zh: "Design" },
+      label: { ja: "デザイン", zh: "设计" },
     },
   ],
 };

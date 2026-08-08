@@ -30,7 +30,7 @@ export function SubPage({
   return (
     <>
       <Background />
-      <main className="relative z-10 mx-auto flex min-h-dvh w-full max-w-[430px] flex-col px-7 pb-16 pt-5">
+      <main className="relative z-10 mx-auto flex min-h-dvh w-full max-w-[560px] flex-col px-6 pb-16 pt-6">
         <div className="flex items-center justify-between">
           <Link
             href="/"
